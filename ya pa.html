@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="teste">TEXTO INICIAL</div>
+
+    <style>
+        body {
+            transition: 500ms;
+            background: linear-gradient(lime, #001380);
+            margin: 0;
+            height: 100vh;
+        }
+        #teste {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(90deg, orange, #00a2ff);
+            line-height: 200px;
+            text-align: center;
+            font-family: arial;
+            border-radius: 8%;
+            transition: 500ms;
+            position: absolute;
+            top: 1%;
+            left: 1%;
+
+        }
+        #teste:hover{
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #004763;
+        }
+    </style>
+    <script>
+        const teste = document.getElementById('teste');
+        const body = document.body
+        const url = 'https://google.com'
+        let vezes = 0;
+
+        teste.addEventListener('mouseenter', function(){
+            teste.innerHTML = 'MOUSE DENTRO'
+            teste.style.backgroundColor = '#004763'
+            body.style.background = 'linear-gradient(180deg, red, lime)'
+        })
+
+        teste.addEventListener('mouseout', function(){
+            teste.innerHTML = 'TEXTO INICIAL'
+            teste.style.background = 'linear-gradient(90deg, orange, #00a2ff)'
+            teste.style.color = 'black'
+        })
+
+        teste.addEventListener('click', function(){
+            vezes ++
+            if (body.style.backgroundColor === 'black'){
+                body.style.backgroundColor = 'white'
+                teste.style.backgroundColor = '#00aef3'
+                teste.style.height = '200px'
+                teste.style.width = '200px'
+                teste.style.borderRadius = '8%'
+                teste.style.top = '1%'
+                teste.innerHTML = 'TESTO INICIAL'
+                teste.style.lineHeight = '200px'
+                teste.style.color = 'black'
+            } else {
+            teste.style.backgroundColor = 'green'
+            teste.style.height = '100px'
+            teste.style.width = '300px'
+            teste.style.borderRadius = '25px'
+            teste.style.top = '8%'
+            teste.innerHTML = 'VOCÊ CLICOU!'
+            teste.style.lineHeight = '100px'
+            body.style.backgroundColor = 'black'
+            }
+            if (vezes === 6) {
+                alert('CHEGA')
+            }
+            if (vezes === 8) {
+                alert('VOCE NAO TA ME OUVINDO???')
+            }
+            if (vezes === 10) {
+                window.open(url, '_blank')
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,1120 @@
+body {
+    background-color: #eceff1;
+    transition: 1s;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#logo {
+    width: 150px;
+    position: fixed;
+    top: 15pt;
+    left: 30pt;
+    cursor: pointer;
+    z-index: 2;
+}
+#moz {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    right: 0pt;
+}
+#moon {
+    position: fixed;
+    left: 29pt;
+    top: 300pt;
+    width: 45px;
+    cursor: pointer;
+    display: block;
+    scale: 1;
+    transition: 250ms;
+    z-index: 2;
+}
+#moon:hover {
+    scale: 1.2;
+}
+#sun {
+    position: fixed;
+    left: 26pt;
+    top: 300pt;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    transition: 1s;
+    z-index: 2;
+    scale: 1;
+    transition: 250ms;
+}
+#sun:hover {
+    scale: 1.2;
+}
+.fonte {
+    font-family: arial;
+    font-family: arial;
+    font-size: 20px;
+    position: absolute;
+    cursor: default;
+    display: block;
+    z-index: 2;
+    color: black;
+}
+.fonteb {
+    font-family: arial;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 20px;
+    position: absolute;
+    cursor: default;
+    display: block;
+}
+#modo {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    left: 80pt;
+    top: 295pt;
+    color: black;
+}
+#modoc {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    left: 80pt;
+    top: 295pt;
+}
+#titles {
+    font-family: arial;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 350pt;
+    left: 200pt;
+}
+#white {
+    position: absolute;
+    top: 0pt;
+    right: 0pt;
+    width: 81.7%;
+    z-index: -1;
+    display: block;
+    transition: 500ms;
+}
+#black {
+    position: absolute;
+    top: 0pt;
+    right: 0pt;
+    width: 91.7%;
+    z-index: -1;
+    display: none;
+    transition: 500ms;
+}
+#sidebar {
+    background-color: #b0bec5;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0pt;
+    left: 0pt;
+    z-index: 1;
+    transition: 500ms;
+}
+#youtube {
+    z-index: 2;
+    position: fixed;
+    width: 35pt;
+    left: 25pt;
+    top: 100pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: block;
+}
+#youtube:hover {
+    scale: 1.2;
+}
+#youtubeb {
+    z-index: 2;
+    position: fixed;
+    width: 35pt;
+    left: 25pt;
+    top: 100pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: none;
+}
+#youtubeb:hover {
+    scale: 1.2;
+}
+#you {
+    z-index: 2;
+    position: fixed;
+    left: 80pt;
+    top: 95pt;
+    color: black;
+}
+#facebook {
+    z-index: 2;
+    position: fixed;
+    width: 35pt;
+    left: 25pt;
+    top: 150pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: block;
+}
+#facebook:hover {
+    scale: 1.2;
+}
+#facebookb {
+    z-index: 2;
+    position: fixed;
+    width: 35pt;
+    left: 25pt;
+    top: 150pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: none;
+}
+#facebookb:hover {
+    scale: 1.2;
+}
+#face {
+    position: fixed;
+    z-index: 2;
+    top: 145pt;
+    left: 80pt;
+    color: black;
+}
+#tiktok {
+    z-index: 2;
+    position: fixed;
+    width: 40pt;
+    left: 25pt;
+    top: 200pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: block;
+}
+#tiktok:hover {
+    scale: 1.2;
+}
+#tiktokb {
+    z-index: 2;
+    position: fixed;
+    width: 40pt;
+    left: 25pt;
+    top: 200pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: none;
+}
+#tiktokb:hover {
+    scale: 1.2;
+}
+#tik {
+    position: fixed;
+    z-index: 2;
+    top: 200pt;
+    left: 80pt;
+    color: black;
+}
+#info {
+    z-index: 2;
+    position: fixed;
+    width: 45pt;
+    left: 23pt;
+    top: 250pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: block;
+}
+#info:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+#infob {
+    z-index: 2;
+    position: fixed;
+    width: 45pt;
+    left: 23pt;
+    top: 250pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 250ms;
+    display: none;
+}
+#infob:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+#about {
+    position: fixed;
+    z-index: 2;
+    top: 250pt;
+    left: 80pt;
+    color: black;
+}
+#back {
+    z-index: 2;
+    position: fixed;
+    width: 27pt;
+    left: 10pt;
+    top: 200pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 700ms;
+    display: none;
+}
+#backw {
+    z-index: 2;
+    position: fixed;
+    width: 27pt;
+    left: -35pt;
+    top: 200pt;
+    cursor: pointer;
+    scale: 1;
+    transition: 900ms;
+    display: none;
+}
+.thumbs {
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    top: 420pt;
+    transition: 250ms;
+}
+.thumbs:hover {
+    cursor: pointer;
+    top: 405pt;
+}
+.thumbs2 {
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    top: 670pt;
+    transition: 250ms;
+}
+.thumbs2:hover {
+    cursor: pointer;
+    top: 655pt;
+}
+.thumbs3 {
+    position: absolute;
+    z-index: 1;
+    border-radius: 15px;
+    top: 920pt;
+    transition: 250ms;
+}
+.thumbs3:hover {
+    cursor: pointer;
+    top: 905pt;
+}
+.names {
+    font-family: sans-serif;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 570pt;
+    font-size: 25px;
+    text-align: center;
+    font: 900;
+}
+.names2 {
+    font-family: sans-serif;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 820pt;
+    font-size: 25px;
+    text-align: center;
+    font: 900;
+}
+.names3 {
+    font-family: sans-serif;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 1070pt;
+    font-size: 25px;
+    text-align: center;
+    font: 900;
+    bottom: 20pt;
+}
+#quandoe {
+    left: 800pt;
+}
+#comoe {
+    left: 620pt;
+}
+#ateD {
+    left: 430pt;
+}
+#res {
+    left: 230pt;
+}
+#respect {
+    left: 800pt;
+}
+#video {
+    left: 610pt;
+}
+#eassim {
+    left: 410pt;
+}
+#elep {
+    left: 210pt;
+}
+#pal {
+    left: 230pt;
+}
+#mel {
+    left: 410pt;
+}
+#God {
+    left: 610pt;
+}
+#desejo {
+    left: 810pt;
+}
+#palavra {
+    left: 200pt;
+}
+#melhor {
+    left: 400pt;
+}
+#nem {
+    left: 600pt;
+}
+#des {
+    left: 800pt;
+}
+#ele {
+    left: 200pt;
+}
+#assim {
+    left: 420pt;
+}
+#ovideo {
+    left: 620pt;
+}
+#respecto {
+    left: 800pt;
+}
+#respeito {
+    left: 200pt;
+}
+#ate {
+    left: 420pt;
+}
+#favela {
+    left: 620pt;
+}
+#quando {
+    left: 800pt;
+}
+#videos{
+    z-index: 3;
+    position: fixed;
+    left: 230pt;
+    top: 90pt;
+    transition: 500ms;
+}
+#vidpalavra {
+    display: none;
+    border-radius: 20px;
+    width: 55%;
+}
+#videoback {
+    background-color: #b0bec5;
+    width: 70%;
+    height: 80%;
+    position: fixed;
+    top: 55pt;
+    left: 20%;
+    z-index: 2;
+    transition: 200ms;
+    display: none;
+    border-radius: 20px;
+    transition: 250ms;
+}
+#nomebig {
+    font-family: arial;
+    font-size: 40px;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    z-index: 2;
+    display: block;
+    transition: 750ms;
+    color: black;
+}
+#nomebig2 {
+    font-family: arial;
+    font-size: 40px;
+    position: fixed;
+    top: 20%;
+    left: 55%;
+    z-index: 2;
+    display: block;
+    transition: 750ms;
+    color: black;
+}
+#palco {
+    background-color: #37474f;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    display: none;
+    transition: 500ms;
+}
+#touraro {
+    width: 15%;
+    height: 5%;
+    position: fixed;
+    top: 62%;
+    right: 40%;
+    z-index: 3;
+    background-color: #69a0bb;
+    font-family: arial;
+    text-align: center;
+    font-weight: 800;
+    line-height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 250ms;
+    scale: 1;
+    display: none;
+}
+#touraro:hover {
+    scale: 1.1;
+}
+#vidmelhor {
+    display: none;
+    border-radius: 20px;
+    width: 55%;
+}
+#vidnem {
+    display: none;
+    border-radius: 20px;
+    width: 55%;
+}
+#viddes {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#videle {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidassim {
+    display: none;
+    border-radius: 20px;
+    width: 55%;
+}
+#vidvideo {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidrespect {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidrespeito {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidate {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidcomo {
+    display: none;
+    border-radius: 20px;
+    width: 75%;
+}
+#vidquando {
+    display: none;
+    border-radius: 20px;
+    width: 55%;
+}
+@media screen  and (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: white;
+        transition: 1s;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    #logo {
+        width: 150px;
+        position: fixed;
+        top: 0pt;
+        left: 10pt;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #moon {
+        position: fixed;
+        width: 45pt;
+        left: -68pt;
+        top: 280pt;
+        cursor: pointer;
+        display: block;
+        scale: 1;
+        transition: 800ms;
+        z-index: 2;
+    }
+    #moon:hover {
+        scale: 1.2;
+    }
+    #sun {
+        position: fixed;
+        width: 45pt;
+        left: -34pt;
+        top: 280pt;
+        cursor: pointer;
+        display: none;
+        transition: 800ms;
+        z-index: 2;
+        scale: 1;
+    }
+    #sun:hover {
+        scale: 1.2;
+    }
+    .fonte {
+        font-family: arial;
+        font-family: arial;
+        font-size: 25px;
+        position: absolute;
+        cursor: default;
+        display: block;
+        z-index: 2;
+        color: black;
+    }
+    .fonteb {
+        font-family: arial;
+        color: #ffffff;
+        font-family: arial;
+        font-size: 25px;
+        position: absolute;
+        cursor: default;
+        display: block;
+    }
+    #modo {
+        display: block;
+        z-index: 2;
+        position: fixed;
+        left: -120pt;
+        top: 275pt;
+        color: black;
+        transition: 800ms;
+    }
+    #modoc {
+        display: none;
+        z-index: 2;
+        position: fixed;
+        left: -285pt;
+        top: 275pt;
+        transition: 800ms;
+    }
+    #titles {
+        font-family: arial;
+        color: black;
+        z-index: -1;
+        position: absolute;
+        top: 125pt;
+        left: 10pt;
+        font-size: 20px;
+    }
+    #white {
+        position: absolute;
+        top: 0pt;
+        left: 0pt;
+        width: 100%;
+        z-index: -1;
+        display: block;
+        transition: 500ms;
+    }
+    #black {
+        position: absolute;
+        top: 0pt;
+        left: 0pt;
+        width: 100%;
+        z-index: -1;
+        display: none;
+        transition: 500ms;
+    }
+    #sidebar {
+        background-color: #e6e6e6;
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        top: 0pt;
+        left: -250pt;
+        z-index: -1;
+        transition: 200ms;
+        display: block;
+    }
+    #youtube {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 80pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 400ms;
+        display: block;
+    }
+    #youtube:hover {
+        scale: 1.2;
+    }
+    #youtubeb {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 80pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 400ms;
+        display: none;
+    }
+    #youtubeb:hover {
+        scale: 1.2;
+    }
+    #you {
+        z-index: 2;
+        position: fixed;
+        left: -100pt;
+        top: 75pt;
+        color: black;
+        transition: 400ms;
+    }
+    #facebook {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 130pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 500ms;
+        display: block;
+    }
+    #facebook:hover {
+        scale: 1.2;
+    }
+    #facebookb {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 130pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 500ms;
+        display: none;
+    }
+    #facebookb:hover {
+        scale: 1.2;
+    }
+    #face {
+        position: fixed;
+        z-index: 2;
+        left: -100pt;
+        top: 125pt;
+        color: black;
+        transition: 500ms;
+    }
+    #tiktok {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 180pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 600ms;
+        display: block;
+    }
+    #tiktok:hover {
+        scale: 1.2;
+    }
+    #tiktokb {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 181pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 600ms;
+        display: none;
+    }
+    #tiktokb:hover {
+        scale: 1.2;
+    }
+    #tik {
+        position: fixed;
+        z-index: 2;
+        left: -100pt;
+        top: 180pt;
+        color: black;
+        transition: 600ms;
+    }
+    #info {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 230pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 700ms;
+        display: block;
+    }
+    #info:hover {
+        cursor: pointer;
+        scale: 1.2;
+    }
+    #infob {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 230pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 700ms;
+        display: none;
+    }
+    #infob:hover {
+        cursor: pointer;
+        scale: 1.2;
+    }
+    #about {
+        position: fixed;
+        z-index: 2;
+        left: -100pt;
+        top: 225pt;
+        color: black;
+        transition: 700ms;
+    }
+    #back {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 330pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 900ms;
+        display: block;
+    }
+    #backw {
+        z-index: 2;
+        position: fixed;
+        width: 45pt;
+        left: -60pt;
+        top: 330pt;
+        cursor: pointer;
+        scale: 1;
+        transition: 900ms;
+        display: none;
+    }
+    #touraro {
+        width: 50%;
+        height: 5%;
+        position: fixed;
+        top: 83%;
+        left: 20%;
+        z-index: 3;
+        background-color: #69a0bb;
+        font-family: arial;
+        text-align: center;
+        font-weight: 800;
+        line-height: 35px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 250ms;
+        scale: 1;
+        display: nne;
+    }
+    .thumbs {
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+        width: 120pt;
+    }
+    .thumbs2 {
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+        width: 120pt;
+    }
+    .thumbs3 {
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+        width: 120pt;
+    }
+    .names {
+        font-family: sans-serif;
+        color: black;
+        z-index: -1;
+        position: absolute;
+        font-size: 22px;
+        text-align: center;
+        font: 900;
+    }
+    .names2 {
+        font-family: sans-serif;
+        color: black;
+        z-index: -1;
+        position: absolute;
+        top: 820pt;
+        font-size: 22px;
+        text-align: center;
+        font: 900;
+    }
+    .names3 {
+        font-family: sans-serif;
+        color: black;
+        z-index: -1;
+        position: absolute;
+        top: 1070pt;
+        font-size: 22px;
+        text-align: center;
+        font: 900;
+    }
+    #quandoe {
+        left: 140pt;
+        top: 1630pt;
+    }
+    #comoe {
+        left: 140pt;
+        top: 1500pt;
+    }
+    #ateD {
+        left: 140pt;
+        top: 1370pt;
+    }    
+    #pal {
+        left: 140pt;
+        top: 200pt;
+    }
+    #mel {
+        left: 140pt;
+        top: 330pt;
+    }
+    #God {
+        left: 140pt;
+        top: 460pt;
+    }
+    #elep {
+        left: 140pt;
+        top: 720pt;
+    }
+    #assim {
+        left: 140pt;
+        top: 850pt;
+    }
+    #video {
+        left: 140pt;
+        top: 980pt;
+    }
+    #respect {
+        left: 140pt;
+        top: 1110pt;
+    }
+    #res {
+        left: 140pt;
+        top: 1240pt;
+    }
+    #desejo {
+        left: 140pt;
+        top: 590pt;
+    }
+    #palavra {
+        left: 10pt;
+        top: 200pt;
+    }
+    #melhor {
+        left: 10pt;
+        top: 330pt;
+    }
+    #nem {
+        left: 10pt;
+        top: 460pt;
+    }
+    #des {
+        left: 10pt;
+        top: 590pt;
+    }
+    #ele {
+        left: 10pt;
+        top: 720pt;
+    }
+    #eassim {
+        left: 10pt;
+        top: 850pt;
+    }
+    #ovideo {
+        left: 10pt;
+        top: 980pt;
+    }
+    #respecto {
+        left: 10pt;
+        top: 1110pt;
+    }
+    #respeito {
+        left: 10pt;
+        top: 1240pt;
+    }
+    #ate {
+        left: 10pt;
+        top: 1370pt;
+    }
+    #favela {
+        left: 10pt;
+        top: 1500pt;
+    }
+    #quando {
+        left: 10pt;
+        top: 1630pt;
+    }
+    #videoback {
+        background-color: #b0bec5;
+        width: 100%;
+        height: 70%;
+        position: fixed;
+        top: 55pt;
+        left: 0%;
+        z-index: 2;
+        transition: 200ms;
+        display: none;
+        border-radius: 20px;
+        transition: 250ms;
+    }
+    #nomebig {
+        font-family: arial;
+        font-size: 25px;
+        position: fixed;
+        top: 70.5%;
+        left: 8%;
+        z-index: 2;
+        display: block;
+        transition: 750ms;
+    }
+    #nomebig2 {
+        font-family: arial;
+        font-size: 25px;
+        position: fixed;
+        top: 70.5%;
+        left: 25%;
+        z-index: 2;
+        display: block;
+        transition: 750ms;
+    }
+    #palco {
+        background-color: #37474f;
+        opacity: 60%;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        display: none;
+        transition: 500ms;
+    }
+    #videos{
+        z-index: 3;
+        position: fixed;
+        left: 45pt;
+        top: 65pt;
+        transition: 500ms;
+    }
+    #vidpalavra {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidmelhor {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidnem {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #videle {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidassim {
+        display: none;
+        border-radius: 20px;
+        width: 70%;
+    }
+    #vidvideo {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidrespect {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidrespeito {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidate {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidcomo {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+    #vidquando {
+        display: none;
+        border-radius: 20px;
+        width: 80%;
+    }
+    #viddes {
+        display: none;
+        border-radius: 20px;
+        width: 60%;
+    }
+}
+
